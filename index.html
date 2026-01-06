@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+<h1 id="title">Customer Feedback Survey Form</h1>
+<p id="description">We value your opinion! Please take a few minutes to share your experience with our services so we can serve you better in the future.</p>
+<form id="survey-form">
+  <label id="name-label" for="name">Name</label>
+  <input id="name" type="text" placeholder="Enter your Fullname"required>
+  <label id="email-label" for="email">Email</label>
+  <input id="email" type="email" placeholder="Enter your email address" required>
+  <label id="number-label" for="number">Age</label>
+  <input id="number" type="number" min="18" max="100" placeholder="Enter your age" required>
+  <label for="dropdown">Select your role</label>
+  <select id="dropdown">
+    <option value="student">Student</option>
+    <option value="developer">Developer</option>
+  </select>
+  <p>Rate your experience</p>
+  <label>
+  <input type="radio" name="experience" value="excellent" checked>Excellent 
+  </label>
+  <label>
+  <input type="radio" name="experience" value="good">Good
+  </label>
+  <label>
+  <input type="radio" name="experience" value="poor">Poor
+  </label>
+  <p>What services did you use?</p>
+  <label><input type="checkbox" name="services" value="Delivery">Delivery</label>
+  <label><input type="checkbox" name="services" value="customer-support">Customer support</label>
+  <label><input type="checkbox" name="services" value="installation">Installation</label>
+  <label for="comments">Additional Comments</label><br/>
+  <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts here"></textarea>
+ <button id="submit" type="submit">Submit</button>
+</form>
+  <body></body>
+</html>
